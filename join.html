@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io();
+		function ready(){
+			socket.emit('player ready', socket.id);
+			alert('ready clicked');
+		}
+	</script>
+</head>
+<body>
+this is the join page
+	<button onclick="ready()">ready</button>
+	<button>check</button>
+	<button>fold</button>
+</body>
+</html>
